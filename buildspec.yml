@@ -9,6 +9,8 @@ phases:
   build:
    commands:
      - echo Build started on `date`
+     - echo run mvn build
+     - mvn clean install
      - echo Building the Docker image with name $REPOSITORY_URI:$IMAGE_TAG
      - docker build --no-cache -t $REPOSITORY_URI:$IMAGE_TAG .
      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
