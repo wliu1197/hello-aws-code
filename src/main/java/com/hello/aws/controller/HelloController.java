@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping(path = "/hello")
     public String sayHello(){
-        return "Hello world";
+        return "Hello world AWS CodePipeline CI/CD auto deploy";
     }
 }
