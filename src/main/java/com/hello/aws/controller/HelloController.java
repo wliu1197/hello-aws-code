@@ -12,6 +12,6 @@ public class HelloController {
     //Application Load balancer is applied to this running tasks
     @GetMapping(path = "/hello")
     public String sayHello(){
-        return "Hello world AWS CodePipeline CI/CD auto deploy let's do it okok ok";
+        return "Hello world AWS CodePipeline CI/CD auto deploy let's do it";
     }
 }
